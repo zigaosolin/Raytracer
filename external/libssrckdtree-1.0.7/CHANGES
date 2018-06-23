@@ -1,0 +1,62 @@
+Release Notes - libssrckdtree - Version 1.0.7
+
+**Defect
+    * [KDT-5] - k-nearest neighbors search works for k > 1 but
+                sometimes produces incorrect result for k = 1
+
+Release Notes - libssrckdtree - Version 1.0.6
+
+**Defect
+    * [KDT-3] - Test code coverage includes only kd_tree_test
+
+** New Feature
+    * [KDT-1] - Add nearest (single) neighbor search
+    * [KDT-2] - Add k-nearest neighbors search
+
+Release Notes - libssrckdtree - Version 1.0.5
+
+** Improvement
+    * [No Issue] - Add kd_tree assignment and equality operators.
+
+Release Notes - libssrckdtree - Version 1.0.4
+
+** Bug
+    * [No Issue] - Fix bug where floating point type coordinates (integral
+                   types are unaffected) can produce incomplete range
+                   searches for values <= 0.
+** Improvement
+    * [No Issue] - Make upper/lower bounds and dimensions public traits.
+
+Release Notes - libssrckdtree - Version 1.0.3
+
+** Improvement
+    * [No Issue] - Migrate unit tests from cppunit to boost test.
+    * [No Issue] - Detect whether std::tr1 or std namespace is used
+                   by compiler for TR1 extensions and use appropriate one.
+
+Release Notes - libssrckdtree - Version 1.0.2
+
+** Improvement
+    * [No Issue] - Add const qualifiers to immutable local variables
+                   and pointer arguments to potentially assist compiler
+                   optimization.
+    * [No Issue] - Refine and simplify erase(iterator).
+
+Release Notes - libssrckdtree - Version 1.0.1
+
+** Bug
+    * [No Issue] - Fix initialization list bug in unit test that produced
+                   non-uniformly distributed test data.
+** Improvement
+    * [No Issue] - Update kd_tree::erase(kd_tree::iterator) to return an
+                   iterator pointing to the next element, per C++0x associative
+                   container requirements.
+
+Release Notes - libssrckdtree - Version 1.0.0
+
+** Improvement
+    * [No Issue] - Remove Point class and make kd_tree work with any class
+                   conforming to the TR1 fixed size array interface
+**Task
+    * [No Issue] - Remove camel case class and function names, making
+                   style more consistent with STL
